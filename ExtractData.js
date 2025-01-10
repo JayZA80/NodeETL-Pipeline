@@ -20,7 +20,7 @@ async function ExtractData() {
         while (true) {
             const response = await fetch('https://holodex.net/api/v2/videos?channel_id=UCO_aKKYxn4tvrqPjcTzZ6EQ&limit=50&offset=' + offset, {
                 headers: {
-                    // 'X-APIKEY': *API KEY*
+                    'X-APIKEY': process.env.APIKEY
                 },
                 mode: 'cors'
             });
