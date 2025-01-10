@@ -1,17 +1,15 @@
 import fs from 'node:fs';
 
-const readJSON = (file) => {
-    fs.readFile(file, 'utf8', (err, data) => {
-        if (err) {
-            console.error(`We couldn't open the file: ${err.message}`);
+const readJSON = fs.readFile('data.json', 'utf8', (e, d) => {
+    if (e) {
+        console.error(`We couldn't open the file: ${e.message}`);
+    } else {
+        if (d === null) {
+            console.log('There was nothing there.');
         } else {
-            if (data === null) {
-                console.log('There was nothing there.');
-            } else {
-                return data;
-            }
+            return d;
         }
-    });
-}
+    }
+});
 
 export default readJSON
