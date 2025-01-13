@@ -1,6 +1,6 @@
 # ETL Pipeline
 
-This ETL (Extract, Transform, Load) pipeline is a Node.js application that processes and transforms data before storing it in a NoSQL MongoDB database. It is designed for scalable and efficient data management in modern applications.
+This ETL (Extract, Transform, Load) pipeline is a Node.js application that processes and transforms data before storing it in a NoSQL MongoDB database. It is designed for scalable and efficient data management in modern applications. The data in "data.json" was data I scraped myself from ([text](https://vt.poi.cat/vtuber/ceres-fauna)) using JavaScript in chrome's devtools.
 
 ## Features
 - **Extract**: Pulls data from various sources (e.g., APIs, files, or databases).
