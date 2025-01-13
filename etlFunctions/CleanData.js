@@ -65,4 +65,5 @@ const timeConversion = (time) => {
 (async function() {
     const [jsonData, apiData] = await ExtractData();
     let combinedData = await CombineData(apiData, jsonData);
+    console.log(typeof combinedData);
 })();
