@@ -1,6 +1,6 @@
 import ExtractData from "./ExtractData.js";
 
-const CombineData = (dataSet1, dataSet2) => {
+const CleanData = (dataSet1, dataSet2) => {
     try {
         const map1 = new Map();
         dataSet2.forEach(video => {
@@ -62,8 +62,4 @@ const timeConversion = (time) => {
     }
 }
 
-(async function() {
-    const [jsonData, apiData] = await ExtractData();
-    let combinedData = await CombineData(apiData, jsonData);
-    console.log(typeof combinedData);
-})();
+export default CleanData;

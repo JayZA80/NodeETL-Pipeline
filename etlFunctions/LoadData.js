@@ -10,10 +10,11 @@ const LoadData = async (data) => {
         const database = client.db('videos');
         const info = database.collection('info');
         try {
-            info.insertMany(data);
+            await info.insertMany(data);
         } catch (e) {
             console.error(`Something went wrong when inserting data: ${e.message}`);
         }
+        client.close();
     } catch (e) {
         console.error(`We couldn't connect to the database: ${e.message}`);
     }
