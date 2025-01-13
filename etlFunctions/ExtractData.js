@@ -1,10 +1,12 @@
 import fs from 'node:fs';
+import dotenv from 'dotenv';
+dotenv.config();
 
 async function ExtractData() {
     let videos = [];
     let offset = 0;
     // The readFile call returns a string so we convert it to JSON
-    const jsonData = JSON.parse(fs.readFileSync('data.json', 'utf8', (e, d) => {
+    const jsonData = JSON.parse(fs.readFileSync('./data.json', 'utf8', (e, d) => {
         if (e) {
             console.error(`We couldn't open the file: ${e.message}`);
         } else {
