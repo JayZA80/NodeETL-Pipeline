@@ -1,6 +1,6 @@
 # ETL Pipeline
 
-This ETL (Extract, Transform, Load) pipeline is a Node.js application that processes and transforms data before storing it in a NoSQL MongoDB database. It is designed for scalable and efficient data management in modern applications. The data in "data.json" was data I scraped myself from ([text](https://vt.poi.cat/vtuber/ceres-fauna)) using JavaScript in chrome's devtools.
+This ETL (Extract, Transform, Load) pipeline is a Node.js application that processes and transforms data before storing it in a NoSQL MongoDB database. It is designed for scalable and efficient data management in modern applications. The data in "data.json" was data I scraped myself from ([this site](https://vt.poi.cat/vtuber/ceres-fauna)) using JavaScript in chrome's devtools.
 
 ## Features
 - **Extract**: Pulls data from various sources (e.g., APIs, files, or databases).
@@ -28,7 +28,7 @@ This ETL (Extract, Transform, Load) pipeline is a Node.js application that proce
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/etl-pipeline.git
+   git clone https://github.com/JayZA80/NodeETL-Pipeline.git
    cd etl-pipeline
    ```
 
@@ -40,7 +40,7 @@ This ETL (Extract, Transform, Load) pipeline is a Node.js application that proce
 3. Set up environment variables:
    Create a `.env` file in the project root with the following variables:
    ```env
-   MONGO_URI=mongodb://localhost:27017/etl_database
+   MONGO_URI=[ your mongoDB connection string ]
    SOURCE_API_URL=https://api.example.com/data
    ```
    Replace `MONGO_URI` with your MongoDB connection string and `SOURCE_API_URL` with the API or data source URL.
