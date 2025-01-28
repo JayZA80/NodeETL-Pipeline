@@ -41,9 +41,9 @@ This ETL (Extract, Transform, Load) pipeline is a Node.js application that proce
    Create a `.env` file in the project root with the following variables:
    ```env
    MONGO_URI=[ your mongoDB connection string ]
-   SOURCE_API_URL=https://api.example.com/data
+   APIKEY=[ your API key ]
    ```
-   Replace `MONGO_URI` with your MongoDB connection string and `SOURCE_API_URL` with the API or data source URL.
+   Replace `MONGO_URI` with your MongoDB connection string and `APIKEY` with the API key.
 
 ---
 
